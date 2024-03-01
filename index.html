@@ -29,10 +29,15 @@
     <h1>Login page</h1>
     <div><input type="text" placeholder="Username" class="redText"></div>
     <div><input type="password" placeholder="Password" class="redText"></div>
-    <div><button onclick="myFunction()">LOGIN</button><button>REGISTER</button></div>
+    <div><button onclick="myFunction()">LOGIN</button>
+        <a href="./register.html">
+        <button>REGISTER</button></div></a>  
     <script>
         function myFunction() {
-          alert("Successfully Login");
+          let buttonLogin = document.querySelector('#btnLogin');
+          buttonLogin.onclick = function(){
+            alert("Logged in Succesfully!")
+          }
         }
         </script>
     </div>
