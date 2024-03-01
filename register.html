@@ -31,8 +31,15 @@
     <div><input type="password" placeholder="Confirm Password" class="redText"></div>
     <div><input type="password" placeholder="Input First Name" class="redText"></div>
     <div><input type="password" placeholder="Input Last Name" class="redText"></div>
-    <div><button>CANCEL</button><button>REGISTER</button></div>
+    <div><a href="index.html"><button>CANCEL</button></a> <a href="index.html"><button id="buttonRegister">REGISTER</button></a></div>
     </div>
   
 </body>
+<script>
+    function myFunction() {
+      buttonRegister.onclick = function(){
+        alert("Register Succesfully!")
+      }
+    }
+    </script>
 </html>
